@@ -1,0 +1,437 @@
+<!--?xml version="1.0" encoding="utf-8" ?-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml-transitional.dtd">
+<html><head>
+  <title>dejdajan@progtest.fit.cvut.cz - ProgTest</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link href="dejdajan@progtest.fit.cvut.cz%20-%20ProgTest_soubory/css.css" rel="stylesheet" type="text/css">
+  <script src="dejdajan@progtest.fit.cvut.cz%20-%20ProgTest_soubory/shared.js" language="JavaScript" type="text/javascript"></script>
+  
+ </head>
+ <body bgcolor="#828273" text="#000000">
+  <table border="0" width="100%" cellpadding="0" cellspacing="0">
+   <tbody><tr height="25">
+    <td align="left" bgcolor="#00ff00"><span class="navLink"><a class="navLink" href="https://progtest.fit.cvut.cz/index.php?X=Main">ProgTest</a>&nbsp;&nbsp;►&nbsp;&nbsp;<a class="navLink" href="https://progtest.fit.cvut.cz/index.php?X=Course&amp;Cou=133">BI-PA2 (14/15 LS)</a>&nbsp;&nbsp;►&nbsp;&nbsp;<a class="navLink" href="https://progtest.fit.cvut.cz/index.php?X=TaskGrp&amp;Cou=133&amp;Tgr=842">Domácí úloha 03</a>&nbsp;&nbsp;►&nbsp;&nbsp;<b>GPS</b></span></td>
+    <td align="right" bgcolor="#00ff00"><a class="navLink" href="https://progtest.fit.cvut.cz/index.php?X=Logout">Logout</a></td>
+   </tr>
+  </tbody></table>
+<br>
+
+
+
+
+ <br>
+ <br>
+   <center>
+   <div class="topLayout">
+    <div class="outBox">
+     <table class="header" width="100%" cellpadding="0" cellspacing="0">
+      <tbody><tr>
+       <td class="header"><b>GPS</b></td>
+      </tr>
+     </tbody></table>
+    </div>
+   </div>
+  </center>
+ <form name="form1" method="post" action="?X=TaskU&amp;Cou=133&amp;Tgr=842&amp;Tsk=1059" enctype="multipart/form-data">
+  <center>
+    <div class="topLayout">
+     <div class="outBox">
+      <table id="maintable" border="0" width="100%" cellpadding="2" cellspacing="0">
+       <colgroup><col width="200">
+       <col>
+       <col width="130">
+
+       </colgroup><tbody><tr>
+        <td class="ltCell" align="left"><b>Termín odevzdání:</b></td>
+        <td class="tCell" align="left"><b>12.04.2015 23:59:59</b></td>
+        <td class="rtCell" id="countdown" align="right">541900.903 sec</td>
+       </tr>
+
+       <tr>
+        <td class="lCell" align="left"><b>Hodnocení:</b></td>
+        <td class="rCell" colspan="2" align="left"><b>0.0000</b></td>
+       </tr>
+       <tr>
+        <td class="lCell" align="left"><b>Max. hodnocení:</b></td>
+        <td class="rCell" colspan="2" align="left"><b>3.0000</b> (bez bonusů)</td>
+       </tr>
+       <tr>
+        <td class="lCell" align="left"><b>Odevzdaná řešení:</b></td>
+        <td class="rCell" colspan="2" align="left">0 /  20 Volné pokusy + 20 Penalizované pokusy (-2 % penalizace za každé odevzdání)</td>
+       </tr>
+
+       <tr>
+        <td class="lbCell" align="left"><b>Nápovědy:</b></td>
+        <td class="rbCell" colspan="2" align="left">0 / 2 Volné nápovědy + 2 Penalizované nápovědy (-10 % penalizace za každou nápovědu)</td>
+       </tr>
+
+       <tr>
+        <td class="lrtbCell" colspan="3" align="left"><p>Úkolem je realizovat třídy <tt>CGPS</tt> a <tt>CCoord</tt>, které budou 
+implementovat záznamník polohy (ukládat GPS souřadnice).</p>
+
+<p>Třída <tt>CGPS</tt> musí implementovat rozhraní podle popisu:</p>
+
+<ul>
+ <li>Implicitní konstruktor, který vytvoří prázdnou instanci záznamníku 
+  (neobsahuje žádné souřadnice).</li>
+
+ <li>Destruktor, který uvolní prostředky alokované instancí (pokud jej
+  implementace vyžaduje).</li>
+
+ <li>Operátor <tt>+=</tt>, který přidá další GPS souřadnici na konec seznamu.</li>
+
+ <li>Metodu <tt>Add</tt>, která přidá další GPS souřadnici na konec seznamu.</li>
+
+ <li>Metodu <tt>Distance</tt>, která vypočte součet ušlé vzdálenosti mezi uloženými souřadnicemi (v metrech).</li>
+
+ <li>Operátor <tt>&lt;&lt;</tt>, který zobrazí uložené souřadnice do zadaného streamu (formát viz níže).</li>
+
+ <li>Operátor <tt>&gt;&gt;</tt>, který načte GPS souřadnice ze zadaného streamu (formát viz níže). Pokud se čtení 
+   nepodaří, nastavte ve streamu příznak fail a ponechte původní obsah načítaného objektu <tt>CGPS</tt>.</li>
+ 
+ <li>Operátor <tt>[]</tt>, který zpřístupní GPS souřadnici na zadaném indexu. Pokud je zadaná nesprávná 
+   hodnota indexu (mimo meze), bude vyhozena výjimka (libovolná).</li>
+
+ <li>Operátor <tt>()</tt>, který vytvoří novou instanci <tt>CGPS</tt> a vloží do ní zvolený úsek 
+    uložených souřadnic. Operátor bude binární, parametry budou indexy první a poslední souřadnice, 
+    které se zkopírují do nově vytvořeného GPS záznamníku. Pokud jsou zadané indexy nesprávné 
+    (mimo meze, ...), bude vyhozena výjimka.</li>
+
+ <li>Ve třídě nemusíte implementovat kopírující konstruktor a operátor =. V této úloze nebudou testované.</li>
+
+ <li>Do třídy si můžete dodat další vlastní metody/operátory dle vlastního uvážení.</li>
+</ul>
+
+<p>Třída <tt>CCoord musí implementovat konstruktor (předávaná je zeměpisná šířka a délka) a  operátor 
+pro výstup do zadaného streamu. Může implementovat i další rozhraní, které se Vám hodí pro implementaci.</tt></p><tt>
+
+
+<pre>#ifndef __PROGTEST__
+#include &lt;cstdio&gt;
+#include &lt;cstdlib&gt;
+#include &lt;cstring&gt;
+#include &lt;cctype&gt;
+#include &lt;cmath&gt;
+#include &lt;iostream&gt;
+#include &lt;iomanip&gt;
+#include &lt;string&gt;
+#include &lt;sstream&gt;
+#include &lt;vector&gt;
+#include &lt;algorithm&gt;
+using namespace std;
+#endif /* __PROGTEST__ */
+
+class CCoord
+ {
+   public:
+       CCoord ( double lat, double lon );
+    // more constructors
+    // output op &lt;&lt;
+    // todo
+ };
+
+class CGPS
+ {
+   public:
+    // default constructor
+    // destructor
+    // Add ()
+    // Distance ()
+    // op += 
+    // op []
+    // op ()
+    // op &lt;&lt;
+    // op &gt;&gt;
+    // todo
+ };
+</pre>
+
+<p>Odevzdávejte soubor, který obsahuje implementaci požadovaných tříd
+Třída musí splňovat veřejné rozhraní podle ukázky - pokud Vámi odevzdané řešení 
+nebude obsahovat popsané rozhraní, dojde k chybě při kompilaci.  
+Do třídy si ale můžete doplnit další metody (veřejné nebo i privátní)
+a členské proměnné. Odevzdávaný soubor musí obsahovat jak deklaraci  
+třídy (popis rozhraní) tak i definice metod, konstruktoru a destruktoru.
+Je jedno, zda jsou metody implementované inline nebo odděleně. Odevzdávaný
+soubor nesmí kromě implementace požadovaných tříd obsahovat nic    
+jiného, zejména ne funkci <tt>main</tt>. Pro usnadnění odevzdávání můžete 
+využít toho, že ProgTest definuje proměnnou preprocesoru <tt>__PROGTEST__</tt>.
+
+</p><p>Třída je testovaná v omezeném prostředí, kde je limitovaná dostupná paměť 
+a je omezena dobou běhu (limity jsou vidět v hodnocení referenčního řešení).</p>
+
+<p>Při implementaci počítejte, že severní šířka a východní délka mají kladné znaménko, 
+jižní šířka a západní délka jsou se záporným znaménkem. Zeměkouli považujte za ideální 
+kouli o poloměru 6371000 metrů. Při výpočtech používejte datový typ <tt>double</tt>, 
+datový typ <tt>float</tt> nevyhoví požadované přesnosti. Při porovnávání testovací 
+prostředí uznává drobné odchylky vypočtené délky.</p> 
+
+
+<b>Ukázka použití třídy:</b><br>
+<pre>double d;
+CGPS x0;
+cout &lt;&lt; x0;
+ // []
+
+x0 += "(50 6\'16.5\"N, 14 23\'20.25\" E)";
+cout &lt;&lt; x0;
+ // [(50 6'16.5"N, 14 23'20.25"E)]
+
+x0 . Add ( CCoord ( "(50.1003781N, 14.3925125E)" ) ) . Add ( CCoord ( 50.084202, 14.423357 ) );
+cout &lt;&lt; x0;
+ // [(50 6'16.5"N, 14 23'20.25"E) &gt; (50 6'1.361"N, 14 23'33.045"E) &gt; (50 5'3.127"N, 14 25'24.085"E)]
+
+d = x0 . Distance ();
+ // d = 3373.886483
+
+x0 += "(50.0843122N, 14.417463 E)";
+cout &lt;&lt; x0;
+ // [(50 6'16.5"N, 14 23'20.25"E) &gt; (50 6'1.361"N, 14 23'33.045"E) &gt; (50 5'3.127"N, 14 25'24.085"E) &gt; (50 5'3.524"N, 14 25'2.867"E)]
+
+cout &lt;&lt; x0;
+ // [(50 6'16.5"N, 14 23'20.25"E) &gt; (50 6'1.361"N, 14 23'33.045"E) &gt; (50 5'3.127"N, 14 25'24.085"E) &gt; (50 5'3.524"N, 14 25'2.867"E)]
+
+d = x0 . Distance ();
+ // d = 3794.598230
+
+CCoord tmp0 = x0 [ 1 ];
+cout &lt;&lt; tmp0;
+ // (50 6'1.361"N, 14 23'33.045"E)
+
+CGPS tmp1 = x0 ( 1, 2 );
+cout &lt;&lt; tmp1;
+ // [(50 6'1.361"N, 14 23'33.045"E) &gt; (50 5'3.127"N, 14 25'24.085"E)]
+
+
+CGPS x1;
+istringstream tmp2 ( "[(50 6\'16.5\"N, 14 23\'20.25\" E) &gt; (51.5N, 0.0E) &gt; (33.9S, 151.2E) &gt; (37.42190N, 122.08405W) &gt; (0.00N, 50.000W)]" );
+tmp2 &gt;&gt; x1;
+ // tmp2 . fail () = false
+
+cout &lt;&lt; x1;
+ // [(50 6'16.5"N, 14 23'20.25"E) &gt; (51 30'0"N, 0 0'0"E) &gt; (33 54'0"S, 151 12'0"E) &gt; (37 25'18.84"N, 122 5'2.58"W) &gt; (0 0'0"N, 50 0'0"W)]
+
+cout &lt;&lt; x1;
+ // [(50 6'16.5"N, 14 23'20.25"E) &gt; (51 30'0"N, 0 0'0"E) &gt; (33 54'0"S, 151 12'0"E) &gt; (37 25'18.84"N, 122 5'2.58"W) &gt; (0 0'0"N, 50 0'0"W)]
+
+d = x1 . Distance ();
+ // d = 38401662.588282
+
+CGPS tmp3 = x1 ( 1, 3 );
+cout &lt;&lt; tmp3;
+ // [(51 30'0"N, 0 0'0"E) &gt; (33 54'0"S, 151 12'0"E) &gt; (37 25'18.84"N, 122 5'2.58"W)]
+
+istringstream tmp4 ( "[(51.5N, 0.0E) &gt; (33.9S, 151.2E) &gt; (37.42190N, 122.08405W) &gt; (100.00N, 50.000W)]" );
+tmp4 &gt;&gt; x1;
+ // tmp4 . fail () = true
+cout &lt;&lt; x1;
+ // [(50 6'16.5"N, 14 23'20.25"E) &gt; (51 30'0"N, 0 0'0"E) &gt; (33 54'0"S, 151 12'0"E) &gt; (37 25'18.84"N, 122 5'2.58"W) &gt; (0 0'0"N, 50 0'0"W)]
+
+CCoord tmp5 = x1 [ 1 ];
+cout &lt;&lt; tmp5;
+ // (51 30'0"N, 0 0'0"E)
+
+CCoord tmp6 = x1 [ -1 ];
+ // exception thrown
+
+CCoord tmp7 = x1 [ 5 ];
+ // exception thrown
+
+CGPS tmp8 = x1 ( 2, 4 );
+cout &lt;&lt; tmp8;
+ // [(33 54'0"S, 151 12'0"E) &gt; (37 25'18.84"N, 122 5'2.58"W) &gt; (0 0'0"N, 50 0'0"W)]
+
+CGPS tmp9 = x1 ( 2, 5 );
+ // exception thrown
+
+CGPS tmp10 = x1 ( 3, 1 );
+ // exception thrown
+
+istringstream tmp11 ( "[(51.5N, 0.0E) &gt; (33.9S, 151.2E) &gt; (37.42190N, 122.08405W) &gt; (80.00N, 50.000W)]" );
+tmp11 &gt;&gt; x1;
+ // tmp11 . fail () = false
+cout &lt;&lt; x1;
+ // [(51 30'0"N, 0 0'0"E) &gt; (33 54'0"S, 151 12'0"E) &gt; (37 25'18.84"N, 122 5'2.58"W) &gt; (80 0'0"N, 50 0'0"W)]
+
+cout &lt;&lt; x1;
+ // [(51 30'0"N, 0 0'0"E) &gt; (33 54'0"S, 151 12'0"E) &gt; (37 25'18.84"N, 122 5'2.58"W) &gt; (80 0'0"N, 50 0'0"W)]
+</pre>
+</tt></td>
+       </tr>
+
+
+
+
+
+
+
+       <tr>
+ 
+        <td class="ltbCell" align="left" valign="top"><b>Odevzdat:</b></td>
+        <td class="tbCell" align="left" valign="top"><input class="std" name="FILE" type="file"></td>
+        <td class="rtbCell" valign="top"><div class="w120 outButton"><input name="S" value="Odevzdat" class="updButton" type="submit"></div></td>
+ 
+       </tr>
+
+
+
+
+
+
+
+
+      </tbody></table>
+     </div>
+    </div>
+
+
+ <br>
+ <div class="topLayout">
+  <div class="outBox">
+   <table id="reftable" border="0" width="100%" cellpadding="2" cellspacing="0">
+   <tbody><tr>
+    <td class="ltbSepCell" align="left"><input name="SHOW_REF" onchange="showRefSolution()" type="checkbox">&nbsp;<b>Referenční řešení</b></td>
+    <td class="rtbSepCell" align="right">&nbsp;</td>
+   </tr>
+   <tr style="display: none;">
+    <td class="lrtbCell" colspan="2" align="left"><ul><li><b>Hodnotitel: automat</b><ul><li>Program zkompilován</li><li>Test 'Zakladni test s parametry podle ukazky': Úspěch<ul><li>Dosaženo: 100.00 %, požadováno: 100.00 %</li><li>Celková doba běhu: 0.001 s (limit: 2.000 s)</li><li>Využití paměti: 12752 KiB (limit: 15314 KiB)</li><li>Úspěch v závazném testu, hodnocení: 100.00 %</li></ul></li>
+<li>Test 'Nahodny test (op &lt;&lt;, Add, Distance)': Úspěch<ul><li>Dosaženo: 100.00 %, požadováno: 50.00 %</li><li>Celková doba běhu: 0.145 s (limit: 1.999 s)</li><li>Využití paměti: 12752 KiB (limit: 15314 KiB)</li><li>Úspěch v závazném testu, hodnocení: 100.00 %</li></ul></li>
+<li>Test 'Nahodny test (+op &gt;&gt;)': Úspěch<ul><li>Dosaženo: 100.00 %, požadováno: 50.00 %</li><li>Celková doba běhu: 0.008 s (limit: 1.854 s)</li><li>Využití paměti: 12752 KiB (limit: 15314 KiB)</li><li>Úspěch v závazném testu, hodnocení: 100.00 %</li></ul></li>
+<li>Test 'Nahodny test (+op [], op())': Úspěch<ul><li>Dosaženo: 100.00 %, požadováno: 50.00 %</li><li>Celková doba běhu: 0.124 s (limit: 1.846 s)</li><li>Využití paměti: 12752 KiB (limit: 15314 KiB)</li><li>Úspěch v závazném testu, hodnocení: 100.00 %</li></ul></li>
+<li>Celkové hodnocení: 100.00 % (= 1.00 * 1.00 * 1.00 * 1.00)</li></ul></li><li>Celkové procentní hodnocení: 100.00 %</li><li>Bonus za včasné odevzdání: 0.30</li><li>Celkem bodů: 1.00 * ( 3.00 + 0.30 ) = 3.30</li></ul></td>
+   </tr>
+    <tr style="display: none;">
+  <td class="ltbCell" align="left"><b>SW metriky:</b></td>
+  <td class="rtbCell" colspan="2" align="left">
+   <table border="0" cellpadding="2">
+    <tbody><tr>
+     <td>&nbsp;</td>
+     <td class="ac">Celkem</td>
+     <td class="ac">Průměr</td>
+     <td class="ac">Maximum</td>
+     <td>Jméno funkce</td>
+    </tr>
+    <tr>
+     <td>Funkce:</td>
+     <td class="ar"><b>17</b></td>
+     <td class="ar">--</td>
+     <td class="ar">--</td>
+     <td>--</td>
+    </tr>
+    <tr>
+     <td>Řádek kódu:</td>
+     <td class="ar"><b>52</b></td>
+     <td class="ar"><span class="textOk">3.06 ± 3.06</span></td>
+     <td class="ar"><span class="textOk">11</span></td>
+     <td><tt>CCoord(double,double)</tt></td>
+    </tr>
+    <tr>
+     <td>Cyklomatická složitost:</td>
+     <td class="ar"><b>7</b></td>
+     <td class="ar"><span class="textOk">0.41 ± 0.97</span></td>
+     <td class="ar"><span class="textOk">4</span></td>
+     <td><tt>CCoord(double,double)</tt></td>
+    </tr>
+   </tbody></table>
+  </td>
+ </tr>
+   </tbody></table>
+  </div>
+ </div>
+
+
+
+
+
+  </center>
+ </form>
+
+
+
+
+
+
+
+
+<script language="javascript" type="text/javascript">
+<!--
+
+var deadLine = new Date ( 1428875999 * 1000 );
+
+function CBpressed ( num )
+ {
+   var pre, cb;
+
+   cb = MM_findObj ( "cb_" + num );
+   pre = MM_findObj ( "pre_" + num );
+   if ( cb != null && pre != null )
+    {
+      pre . style . display = cb . checked ? "block" : "none";
+    }
+ }
+
+function unlockAdvice ( url )
+ {
+   if ( confirm ( 'Máte k dispozici pouze omezený počet nápověd. Navíc, použití nápovědy může snížit bodové hodnocení. Opravdu chcete zpřístupnit tuto nápovědu?' ) )
+    this . location = url;
+ }
+
+function setCountdown ( )
+ {
+   var d = new Date ();
+   var x = ( deadLine . getTime () - d . getTime () );
+   var tgt = document . getElementById ( "countdown" );
+
+   if ( x > 0 )
+    {
+      var s = Math . floor ( x / 1000 );
+      var ms = (x % 1000) + "";
+
+      while ( ms . length  < 3 ) ms = "0" + ms;
+
+      tgt . innerHTML = s + "." + ms + " sec";
+
+      window . setTimeout ( setCountdown, 117 );
+    }
+   else
+    {
+      tgt . innerHTML = '&nbsp;';
+    }
+ }
+
+function showRefSolution ( )
+ {
+   var t = document . getElementById ( "reftable" );
+   var x = document . getElementsByName ( "SHOW_REF" )[0];
+
+   if ( ! x ) return;
+   var r1 = t . rows[1], r2 = t . rows[2];
+
+   if ( x . checked )
+    {
+      r1 . style . display = "";
+      if ( r2 ) r2 . style . display = "";
+    }
+   else
+    {
+      r1 . style . display = "none";
+      if ( r2 ) r2 . style . display = "none";
+    }
+ }
+
+
+setCountdown ();
+showRefSolution ();
+
+// -->
+</script>
+
+
+
+
+
+ 
+
+
+</body></html>
+<!-- Template run time: 0.019253969192505 sec -->

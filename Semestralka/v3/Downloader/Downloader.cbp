@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Downloader" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Downloader" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="CArguments.cpp" />
+		<Unit filename="CArguments.h" />
+		<Unit filename="CDownload.cpp" />
+		<Unit filename="CDownload.h" />
+		<Unit filename="CImage.cpp" />
+		<Unit filename="CImage.h" />
+		<Unit filename="CObject.cpp" />
+		<Unit filename="CObject.h" />
+		<Unit filename="CPage.cpp" />
+		<Unit filename="CPage.h" />
+		<Unit filename="EException.cpp" />
+		<Unit filename="EException.h" />
+		<Unit filename="EMissingArgument.cpp" />
+		<Unit filename="EMissingArgument.h" />
+		<Unit filename="ESyntaxError.cpp" />
+		<Unit filename="ESyntaxError.h" />
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

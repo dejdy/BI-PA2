@@ -1,0 +1,59 @@
+# depslib dependency file v1.0
+1433176891 source:/home/dejdy/Dokumenty/Dropbox/FIT ČVUT/PA2/Semestralka/v2/Downloader/CDownload.cpp
+	<errno.h>
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	<unistd.h>
+	<err.h>
+	<sys/types.h>
+	<sys/socket.h>
+	<netdb.h>
+	<arpa/inet.h>
+	<stdarg.h>
+	<string>
+	<fstream>
+	"CDownload.h"
+
+1433175322 /home/dejdy/Dokumenty/Dropbox/FIT ČVUT/PA2/Semestralka/v2/Downloader/CDownload.h
+	<string>
+	<vector>
+	"CPage.h"
+
+1433172720 source:/home/dejdy/Dokumenty/Dropbox/FIT ČVUT/PA2/Semestralka/v2/Downloader/CPage.cpp
+	"CPage.h"
+
+1433177055 /home/dejdy/Dokumenty/Dropbox/FIT ČVUT/PA2/Semestralka/v2/Downloader/CPage.h
+	"CObject.h"
+	<iostream>
+	<string>
+	<set>
+
+1433175202 source:/home/dejdy/Dokumenty/Dropbox/FIT ČVUT/PA2/Semestralka/v2/Downloader/main.cpp
+	<iostream>
+	"CDownload.h"
+	"CPage.h"
+
+1431453224 /home/dejdy/Dokumenty/Dropbox/FIT ČVUT/PA2/Semestralka/v2/Downloader/GetPage.cpp
+	<errno.h>
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	<unistd.h>
+	<err.h>
+	<sys/types.h>
+	<sys/socket.h>
+	<netdb.h>
+	<arpa/inet.h>
+	<stdarg.h>
+	<string>
+
+1433090907 source:/home/dejdy/Dokumenty/Dropbox/FIT ČVUT/PA2/Semestralka/v2/Downloader/CContent.cpp
+	"CContent.h"
+
+1433091740 /home/dejdy/Dokumenty/Dropbox/FIT ČVUT/PA2/Semestralka/v2/Downloader/CContent.h
+
+1433177034 /home/dejdy/Dokumenty/Dropbox/FIT ČVUT/PA2/Semestralka/v2/Downloader/CObject.h
+
+1433176979 source:/home/dejdy/Dokumenty/Dropbox/FIT ČVUT/PA2/Semestralka/v2/Downloader/CObject.cpp
+

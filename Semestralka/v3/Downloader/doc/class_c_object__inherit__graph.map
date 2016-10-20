@@ -1,0 +1,4 @@
+<map id="CObject" name="CObject">
+<area shape="rect" id="node2" href="$class_c_image.html" title="{CImage\n||+ CImage()\l+ CImage()\l+ ~CImage()\l+ download()\l}" alt="" coords="5,314,99,435"/>
+<area shape="rect" id="node3" href="$class_c_page.html" title="{CPage\n|&#45; m_header\l&#45; m_html\l&#45; m_toDown\l&#45; m_downloaded\l|+ CPage()\l+ CPage()\l+ ~CPage()\l+ download()\l&#45; setHtml()\l&#45; setHeader()\l&#45; isRelative()\l&#45; parseLinks()\l&#45; parse()\l&#45; isInTag()\l}" alt="" coords="124,248,239,501"/>
+</map>

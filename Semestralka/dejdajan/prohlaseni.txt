@@ -1,0 +1,8 @@
+Prohlašuji, že tato semestrální práce je mým původním dílem a vypracoval jsem ji samostatně.
+
+Veškeré části kódu, které nejsou mým výlučným autorským dílem, jsou označeny
+v hlavičce souboru, v němž se nacházejí, společně s příslušným odkazem (přes který lze k daným
+souborům přistoupit).
+
+ ve Vysokém Mýtě 8. června 2015
+	Jan Dejdar

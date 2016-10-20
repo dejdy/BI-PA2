@@ -1,0 +1,97 @@
+# depslib dependency file v1.0
+1433690468 source:/home/dejdy/Dokumenty/Dropbox/FIT ČVUT/PA2/Semestralka/v3/Downloader/CDownload.cpp
+	<errno.h>
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	<unistd.h>
+	<err.h>
+	<sys/types.h>
+	<sys/socket.h>
+	<netdb.h>
+	<arpa/inet.h>
+	<stdarg.h>
+	<string>
+	<fstream>
+	"CDownload.h"
+
+1433706337 /home/dejdy/Dokumenty/Dropbox/FIT ČVUT/PA2/Semestralka/v3/Downloader/CDownload.h
+	<string>
+	<vector>
+	"CPage.h"
+
+1433706265 /home/dejdy/Dokumenty/Dropbox/FIT ČVUT/PA2/Semestralka/v3/Downloader/CPage.h
+	"CObject.h"
+	"CArguments.h"
+	<iostream>
+	<string>
+	<set>
+	<queue>
+
+1433688921 /home/dejdy/Dokumenty/Dropbox/FIT ČVUT/PA2/Semestralka/v3/Downloader/CObject.h
+	<string>
+	"CArguments.h"
+
+1433705867 source:/home/dejdy/Dokumenty/Dropbox/FIT ČVUT/PA2/Semestralka/v3/Downloader/CObject.cpp
+	<iostream>
+	<string>
+	"CObject.h"
+
+1433779969 source:/home/dejdy/Dokumenty/Dropbox/FIT ČVUT/PA2/Semestralka/v3/Downloader/CPage.cpp
+	<fstream>
+	<string>
+	"CPage.h"
+	"CImage.h"
+	"CDownload.h"
+
+1433784365 source:/home/dejdy/Dokumenty/Dropbox/FIT ČVUT/PA2/Semestralka/v3/Downloader/main.cpp
+	<iostream>
+	<queue>
+	"CDownload.h"
+	"CObject.h"
+	"CPage.h"
+	"CArguments.h"
+	"EMissingArgument.h"
+
+1433700450 source:/home/dejdy/Dokumenty/Dropbox/FIT ČVUT/PA2/Semestralka/v3/Downloader/CImage.cpp
+	<iostream>
+	"CImage.h"
+
+1433784635 /home/dejdy/Dokumenty/Dropbox/FIT ČVUT/PA2/Semestralka/v3/Downloader/CImage.h
+	"CObject.h"
+	"CDownload.h"
+
+1433785985 source:/home/dejdy/Dokumenty/Dropbox/FIT ČVUT/PA2/Semestralka/v3/Downloader/CArguments.cpp
+	<iostream>
+	<string>
+	"CArguments.h"
+
+1433784365 /home/dejdy/Dokumenty/Dropbox/FIT ČVUT/PA2/Semestralka/v3/Downloader/CArguments.h
+	<string>
+	<set>
+	"EMissingArgument.h"
+	"ESyntaxError.h"
+
+1433784531 source:/home/dejdy/Dokumenty/Dropbox/FIT ČVUT/PA2/Semestralka/v3/Downloader/EMissingArgument.cpp
+	<iostream>
+	"EMissingArgument.h"
+
+1433784635 /home/dejdy/Dokumenty/Dropbox/FIT ČVUT/PA2/Semestralka/v3/Downloader/EMissingArgument.h
+	<iostream>
+	"EException.h"
+
+1433782835 source:/home/dejdy/Dokumenty/Dropbox/FIT ČVUT/PA2/Semestralka/v3/Downloader/EException.cpp
+	<iostream>
+	"EException.h"
+
+1433784496 /home/dejdy/Dokumenty/Dropbox/FIT ČVUT/PA2/Semestralka/v3/Downloader/EException.h
+	<iostream>
+
+1433784526 source:/home/dejdy/Dokumenty/Dropbox/FIT ČVUT/PA2/Semestralka/v3/Downloader/ESyntaxError.cpp
+	<iostream>
+	"ESyntaxError.h"
+
+1433784635 /home/dejdy/Dokumenty/Dropbox/FIT ČVUT/PA2/Semestralka/v3/Downloader/ESyntaxError.h
+	<iostream>
+	"EException.h"
+

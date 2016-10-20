@@ -1,0 +1,54 @@
+er>
+       <img src="img/radek-name.jpg" alt="Radek Olsak" border=0>
+   </td></tr>
+   <tr><td align=right>
+Nar. 1999, syn Petra a Lídy. Jsem student soukromého
+<a href="http://www.mensagymnazium.cz/">Mensa gymnázia</a>. Døíve se toto
+gymnázium jmenovalo Buïánka a studoval tam mùj bratr.
+   </td><td colspan=2 align=center>
+        <A HREF="img/radek-k2.jpg" target="new">
+           <img src="img/radek-k3.jpg" alt="Radek: drawing" border=0></A>
+   </td><td>
+Born in 1999, son of Petr and Lída. 
+I am student of the
+<a href="http://www.mensagymnazium.cz/">private high school of
+Mensa.cz</a>. This school was named Budanka and my brother studied here.
+   </td></tr>
+   <tr><td colspan=4 height=20><HR></td></tr>
+
+   <tr><td align=right>
+<A HREF="hron2003/">Expedice Hron 2003</A>
+   </td><td></td><td></td><td>
+<A HREF="hron2003/">Expedition Hron 2003</A>
+   </td></tr>
+   <tr><td align=right>
+<A HREF="dunaj2004/">Expedice Dunaj 2004</A>
+   </td><td></td><td></td><td>
+<A HREF="dunaj2004/">Expedition Donau 2004</A>
+   </td></tr>
+
+   <tr><td align=right>
+<A HREF="http://vita.olsak.net">Olsakovy fotky</A>
+   </td><td></td><td></td><td>
+<A HREF="http://vita.olsak.net">Olsak's photos</A>
+   </td></tr>
+   <tr><td colspan=4 height=20><HR></td></tr>
+
+
+   <tr><td colspan=4 align=center>
+       <img src="img/olsnet.jpg" alt="olsnet" border=0>
+   </td></tr>
+
+</table>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
